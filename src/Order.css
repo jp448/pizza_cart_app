@@ -1,0 +1,23 @@
+.Order .cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.Order .Card {
+    margin: 10px;
+}
+
+.Order p {
+    border: 3px solid purple;
+    width: 68px;
+    margin: 20px auto;
+    padding: 15px 20px;
+}
+
+.Order p:hover {
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+}

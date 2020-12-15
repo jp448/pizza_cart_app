@@ -1,0 +1,22 @@
+.Checkout form {
+    text-align: center;
+    padding: 20px;
+}
+
+.Checkout .btn {
+    border: 3px solid purple;
+    width: 100px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.Checkout .btn:hover {
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+}
+
+.Checkout p {
+    text-align: center;
+}
