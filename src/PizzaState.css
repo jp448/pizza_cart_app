@@ -4,4 +4,47 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-direction: row;
 }
+
+/* Smallest device */
+@media (min-width: 100px) and (max-width: 575px) {
+  .PizzaState {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .PizzaState {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .PizzaState {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .PizzaState {
+    flex-direction: row;
+    padding: 10px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .PizzaState {
+    flex-direction: row;
+    padding: 10px;
+  }
+}
+
+

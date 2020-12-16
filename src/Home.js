@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useHistory } from "react-router-dom";
+import "./Home.css"
 
 const Home = ({}) =>{
-  // Declare a new state variable, which we'll call "count"
+
+  // Uses react-router-dom to get history to navigate to first order page
+  const history = useHistory();
+
+  const toOrder = () => {
+    history.push("/style");
+  };
 
   return (
-    <div>Home</div>
+    <div className="Home">
+        <h1>Welcome to Pizza Cart!</h1>
+        <h3>Make Your Own Pizza</h3>
+        <button onClick={toOrder}>Order!</button>
+    </div>
   );
 }
 

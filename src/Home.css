@@ -1,0 +1,23 @@
+.Home {
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.Home h1 {
+    color: purple;
+}
+
+.Home button {
+    border: 3px solid purple;
+    width: 100px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.Home button:hover {
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+}

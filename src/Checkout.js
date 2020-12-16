@@ -6,15 +6,20 @@ const Checkout = ({style, dough, toppings}) => {
     const [accepted, setAccept] = useState(false);
     const [confirmed, setConfirmed] = useState(false);
 
+    //checks whether the order has been confirmed by user
     const checkoutOrder = () => {
         setAccept(!accepted);
     }
   
     const onSubmit = (event) =>  {
         if (accepted) {
-            console.log(style);
-            console.log(dough);
-            console.log(toppings);
+            //{“style”: “italian”, “dough”: “standard”,“toppings”: [“cheese”, “salami”]}
+            const pizza = {
+                style: style[0].name,
+                dough: dough[0].name,
+                toppings: toppings.map(topping => {return topping.name;})
+            }
+            console.log(pizza);
             setConfirmed(true);
         } else {
             alert("Please confirm your order");

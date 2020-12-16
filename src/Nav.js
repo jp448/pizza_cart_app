@@ -5,21 +5,28 @@ import './Nav.css';
 
 const Nav = ({}) =>{
 
+  // uses react-router-dom location to navigate through app- user cannot skip around but can return to previous pages  
   const location = useLocation();
   let orderingProcess = 0;
 
+  const changeProcessNumber = (no) => {
+    if (orderingProcess < no) {
+        orderingProcess = no;
+    }
+  }
+
   switch(location.pathname) {
       case "/style":
-          orderingProcess = 0;
+          changeProcessNumber(0);
           break;
       case "/dough":
-          orderingProcess = 1;
+          changeProcessNumber(1);
           break;
       case "/toppings":
-          orderingProcess = 2;
+          changeProcessNumber(2);
           break;
       default:
-          orderingProcess = 3;
+          changeProcessNumber(3)
   }
 
   return (

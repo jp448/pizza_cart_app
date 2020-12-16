@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 import './Card.css';
 
-const Card = ({name, addItem, activeItems}) =>{
+const Card = ({item, addItem, activeItems}) => {
 
-  const currentState = activeItems.includes(name) ? true : false;
+  // set the states taking the selected items from the app 
+  const currentState = activeItems.includes(item) ? true : false;
   const [active, setActive] = useState(currentState);
 
+  //toggles the item (active => !active)
   const toggleBox = () => {
     setActive(!active);
-    addItem(name);
+    addItem(item);
   };
 
   return (
     <div className={`Card ${active ? "active" : ""}`} onClick={toggleBox}>
-      <h1>{name}</h1>
+      <h1>{item.name}</h1>
+      <h2>{item.base ? '$' + item.price : '+$' + item.price}</h2>
     </div>
   );
 }
