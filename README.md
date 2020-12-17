@@ -37,3 +37,6 @@ If I had more time here are the improvements I would make to the app:
 * make components rely less on text and more on visual aids
 * use the redux store (was not enough time to implement this)
 
+**Thought Process**
+I used react as a framework as it is the javascript frontend framework I have the most experience with. I used state to save the pizza order data in between renders. State acts as a replacement for a redux store- I was too unfamilar with redux to implement the redux store in the time frame given, would be very interested in learning more about redux in the furture. The design is quite basic as I focused more on functionality. 
+
