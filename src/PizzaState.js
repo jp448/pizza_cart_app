@@ -2,13 +2,15 @@ import React from 'react';
 import './PizzaState.css';
 
 const PizzaState = ({style, dough, toppings}) =>{
-
+  
+  // a basic sum of an array function   
   const sum = (array) => {
     return array.reduce(function(a, b){
         return a + b.price;
     }, 0);
   };
-
+  
+  // logic to calculatue the price of the selected items
   const calcPrice = () => {
     return sum(style) + sum(dough) + sum(toppings);
   };
