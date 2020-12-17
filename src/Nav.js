@@ -15,6 +15,7 @@ const Nav = ({}) =>{
     }
   }
 
+  // switch used to move through the app 
   switch(location.pathname) {
       case "/style":
           changeProcessNumber(0);

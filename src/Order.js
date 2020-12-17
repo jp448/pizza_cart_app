@@ -4,8 +4,10 @@ import './Order.css';
 
 const Order = ({items, addItem, activeItems, next}) =>{
 
+  //logic for the vegitarian only option
   const [vegOnly, setvegOnly] = useState(false);
 
+  //toggles the checkbox
   const changeVegetarian = () => {
     setvegOnly(!vegOnly);
   };
