@@ -5,7 +5,18 @@
     text-align: center;
 }
 
+.Card:hover {
+    color: #FB8B24;
+    border: 5px solid #FB8B24;
+    cursor: pointer;
+}
+
 .active {
-    border: 5px solid purple;
-    color: purple;
+    border: 5px solid #FB8B24;
+    color: #FB8B24;
+}
+
+.Card img {
+    width: 150px;
+    height: 65px;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import "./Home.css"
+import pizza from "./img/pizza.png"
 
 const Home = ({}) =>{
 
@@ -15,6 +16,7 @@ const Home = ({}) =>{
     <div className="Home">
         <h1>Welcome to Pizza Cart!</h1>
         <h3>Make Your Own Pizza</h3>
+        <div><img className="rotate" src={pizza}/></div>
         <button onClick={toOrder}>Order!</button>
     </div>
   );

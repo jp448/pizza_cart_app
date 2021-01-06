@@ -17,6 +17,7 @@ const Card = ({item, addItem, activeItems}) => {
     <div className={`Card ${active ? "active" : ""}`} onClick={toggleBox}>
       <h1>{item.name}</h1>
       <h2>{item.base ? '$' + item.price : '+$' + item.price}</h2>
+      <div><img src={item.img}/></div>
     </div>
   );
 }
