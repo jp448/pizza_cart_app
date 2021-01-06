@@ -8,13 +8,19 @@
     border: 2px solid black;
     border-radius: 50%;
     padding: 5px 10px;
-    margin-top: 12px;
+    margin: 16px 0px;
 }
 
 .Nav a {
     text-decoration: none;
     border: 2px solid purple;
+    color: purple;
     border-radius: 50%;
     padding: 5px 10px;
     margin: 16px 0px;
   }
+
+.Nav a:hover {
+    border: 2px solid #FB8B24;
+    color: #FB8B24;
+}
