@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Checkout.css'
+import './Checkout.css';
+import pizza from "./img/pizza.png";
 
 const Checkout = ({style, dough, toppings}) => {
 
@@ -34,7 +35,7 @@ const Checkout = ({style, dough, toppings}) => {
             <input type="checkbox" value={accepted} onChange={checkoutOrder} /><br></br>
             <button className="btn">checkout</button>
         </form>
-        {confirmed ? <p>Your order is on its way!</p> : ""}
+        {confirmed ? <div><p>Your order is on its way!</p><div><img src={pizza}/></div></div> : ""}
     </div> 
   );
 }

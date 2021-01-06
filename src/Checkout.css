@@ -14,9 +14,37 @@
 .Checkout .btn:hover {
     cursor: pointer;
     background-color: purple;
-    color: white;
+    color: #FB8B24;
+    font-weight: bold;
 }
 
 .Checkout p {
     text-align: center;
 }
+
+.Checkout img {
+    width: 175px;
+    height: 165px;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }

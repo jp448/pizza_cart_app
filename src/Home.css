@@ -19,18 +19,19 @@
 .Home button:hover {
     cursor: pointer;
     background-color: purple;
-    color: white;
+    color: #FB8B24;
+    font-weight: bold;
 }
 
 .Home img {
     align-content: center;
-    width: 200px;
-    height: 140px;
-    margin: 30px;
+    width: 175px;
+    height: 165px;
+    margin: 15px;
 }
 
 .rotate {
-    animation: rotation 8s infinite linear;
+    animation: rotation 15s infinite linear;
 }
   
   @keyframes rotation {

@@ -19,7 +19,8 @@
 .Order p:hover {
     cursor: pointer;
     background-color: purple;
-    color: white;
+    color: #FB8B24;
+    font-weight: bold;
 }
 
 .Order .form {
