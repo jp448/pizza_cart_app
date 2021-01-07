@@ -1,3 +1,13 @@
 body {
     background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.mainWindow {
+    float: left;
+}
+
+.sideWindow {
+    float: left;
 }

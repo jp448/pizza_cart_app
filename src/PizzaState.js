@@ -15,12 +15,15 @@ const PizzaState = ({style, dough, toppings}) =>{
     return sum(style) + sum(dough) + sum(toppings);
   };
 
+  let ingredients = [];
+  toppings.forEach(i => ingredients.push(<li>{i.name}</li>)); 
+
   return (
     <div className="PizzaState">
-        {style.length !== 0 ? <p>{'Style of Pizza: ' + style.map(i => { return i.name; }).join(', ') }</p> : ''}
-        {dough.length !== 0 ? <p>{'Pizza Dough Type: ' + dough.map(i => { return i.name; }).join(', ') }</p> : ''}
-        {toppings.length !== 0 ? <p>{'Pizza Toppings: ' + toppings.map(i => { return i.name; }).join(', ') }</p> : ''}
-        <p>{'Total: $' + calcPrice()}</p>
+        {style.length !== 0 ? <p><span>Style of Pizza</span><ul><li>{style.map(i => { return i.name; }).join(', ') }</li></ul></p> : ''}
+        {dough.length !== 0 ? <p><span>Pizza Dough Type</span><ul><li>{dough.map(i => { return i.name; }).join(', ') }</li></ul></p> : ''}
+        {toppings.length !== 0 ? <p><span>Pizza Toppings</span><ul>{ingredients}</ul></p> : ''}
+        <p><span>Total: </span>${calcPrice()}</p>
     </div>
   );
 }

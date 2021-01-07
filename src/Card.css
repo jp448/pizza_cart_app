@@ -3,6 +3,7 @@
     height: 200px;
     border: 5px solid black;
     text-align: center;
+    margin: 10px;
 }
 
 .Card:hover {
