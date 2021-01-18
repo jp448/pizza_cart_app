@@ -23,6 +23,7 @@ This app was created for the adelphi FE coding challenge. It is a pizza ordering
 * a vegitarian option can be selected and unselected
 * order needs to be confirmed before accepted
 * json appears in console once order is accepted
+* icons designed by myself using affinity designer
 
 **App Structure**
 
@@ -33,11 +34,14 @@ The app is split into several different components. An index component as usual.
 If I had more time here are the improvements I would make to the app: 
 * Improve code by refactoring (especially the app component- where I would removed the data). 
 * Add tests.
-* Make design a bit more unique (right now just basic css and html)
 * make components rely less on text and more on visual aids
 * use the redux store (was not enough time to implement this)
 
 **Thought Process**
 
 I used react as a framework as it is the javascript frontend framework I have the most experience with. I used state to save the pizza order data in between renders. State acts as a replacement for a redux store- I was too unfamilar with redux to implement the redux store in the time frame given, would be very interested in learning more about redux in the furture. The design is quite basic as I focused more on functionality. 
+
+**App Updates**
+
+The app was updated with original icons made with affinity designer
 
